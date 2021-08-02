@@ -7,7 +7,7 @@ const {
   DBPASS,
   DBPORT,
   SYSTEMDEFAULT,
-  APPPORT,
+  // PORT,
   JWTKEY,
 } = process.env
 
@@ -25,6 +25,6 @@ module.exports = {
   sequelize: require('./sequelize')(config),
   encrypt: require('./encrypt'),
   jwt: require('./jwt')(JWTKEY),
-  port: APPPORT,
+  // port: PORT,
   todayDate,
 }

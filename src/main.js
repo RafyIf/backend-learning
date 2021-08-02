@@ -3,7 +3,7 @@ const http = require('./helper/http')
 function run() {
   sequelize.sync({ force: false, alter: false })
   http()
-  express.listen(port, () => console.log('server running on port ' + port))
+  express.listen(process.env.PORT || 8080, () => console.log('server running on port ' + port))
 }
 
 run()
