@@ -33,12 +33,14 @@ module.exports = sequelize.define(
       defaultValue: null,
     },
     type: {
-      type: DataTypes.ENUM(['informasi', 'menu', 'link']),
+      // type: DataTypes.ENUM(['informasi', 'menu', 'link']),
+      type: DataTypes.STRING,
       allowNull: true,
       defaultValue: 'menu',
     },
     subType: {
-      type: DataTypes.ENUM(['sub1', 'sub2', 'sub3']),
+      // type: DataTypes.ENUM(['sub1', 'sub2', 'sub3']),
+      type: DataTypes.STRING,
       allowNull: true,
       defaultValue: 'sub1',
     },

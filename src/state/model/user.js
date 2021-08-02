@@ -35,7 +35,8 @@ module.exports = sequelize.define(
       defaultValue: null,
     },
     role: {
-      type: DataTypes.ENUM(['admin', 'dosen', 'mahasiswa']),
+      // type: DataTypes.ENUM(['admin', 'dosen', 'mahasiswa']),
+      type : DataTypes.STRING,
       allowNull: false,
       defaultValue: 'mahasiswa',
     },

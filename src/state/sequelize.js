@@ -5,12 +5,12 @@ module.exports = ({ host, dbName, user, password, port, systemDefault }) => {
     host,
     dialect: systemDefault,
     port,
-    //   dialectOptions: {
-    //     ssl: {
-    //       require: true,
-    //       rejectUnauthorized: false
-    //     }
-    //   }
+    dialectOptions: {
+      ssl: {
+        require: true,
+        rejectUnauthorized: false,
+      },
+    },
   })
   return database
 }
